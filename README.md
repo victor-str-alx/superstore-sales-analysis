@@ -1,6 +1,6 @@
 # Superstore Sales Analysis
 
-A retail sales and profitability analysis project using Microsoft Excel and Google BigQuery (SQL), with a Power BI dashboard planned as the next stage.
+A retail sales and profitability analysis project using Microsoft Excel, Google BigQuery (SQL), and Looker Studio.
 
 ## Project Objective
 
@@ -10,7 +10,31 @@ Analyze 9,994 Superstore records to understand sales, profit, profit margin, and
 
 - **Microsoft Excel** — data inspection, pivot-style analysis, charts, and project summary
 - **Google BigQuery / SQL** — data validation and aggregated analysis
-- **Power BI** — dashboard planned as the next project stage
+- **Looker Studio (Google Data Studio)** — interactive two-page dashboard connected to BigQuery
+- **Power BI Desktop** — planned as a follow-up dashboard implementation
+
+## Live Dashboard
+
+[Open the Superstore Sales & Profitability Dashboard in Looker Studio](https://datastudio.google.com/reporting/77a2dc30-0c3a-47a8-bd9b-3626ca4dcce9)
+
+The dashboard contains two pages:
+
+### Sales Overview
+
+- KPI scorecards for Sales, Profit, Profit Margin, and Quantity
+- Monthly sales trend (2014–2017)
+- Sales by category
+- Sales by region
+- Interactive date-range and region filters
+
+### Profitability Analysis
+
+- Profit by all 17 sub-categories, including loss-making sub-categories
+- Profit by category
+- Profit margin by category
+- Interactive date-range and region filters
+
+> Dashboard access depends on the Looker Studio sharing settings. The report owner should enable viewer access for anyone with the link before sharing this URL publicly.
 
 ## Validated Dataset Metrics
 
@@ -62,6 +86,7 @@ superstore-sales-analysis/
 ## SQL Analysis Included
 
 Six BigQuery queries cover:
+
 1. Data validation
 2. Category analysis
 3. Sub-category profitability
@@ -73,7 +98,7 @@ Full SQL and explanations are provided in [SQL_Analysis_Documentation.md](SQL_An
 
 ## How to Review the Project
 
-Start with this README for the overview, then review the business insights, SQL documentation, individual SQL files, and Excel workbook. Dashboard files and screenshots will be added as the project progresses.
+Start with this README for the project overview and live dashboard. Then review the business insights, SQL documentation, individual SQL files, and Excel workbook.
 
 ## Project Status
 
@@ -81,5 +106,5 @@ Start with this README for the overview, then review the business insights, SQL 
 - [x] Category, sub-category, regional, annual, and monthly SQL analysis
 - [x] Excel analysis workbook
 - [x] Business insights and SQL documentation
-- [ ] Power BI dashboard
-- [ ] Final screenshots and portfolio review
+- [x] Looker Studio dashboard with date and region filters
+- [ ] Power BI dashboard (planned follow-up)

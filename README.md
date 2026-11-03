@@ -17,7 +17,7 @@ Analyze 9,994 Superstore records to understand sales, profit, profit margin, and
 
 [Open the Superstore Sales & Profitability Dashboard in Looker Studio](https://datastudio.google.com/reporting/77a2dc30-0c3a-47a8-bd9b-3626ca4dcce9)
 
-The dashboard contains two pages:
+The dashboard is publicly viewable by anyone with the link and contains two pages.
 
 ### Sales Overview
 
@@ -27,6 +27,8 @@ The dashboard contains two pages:
 - Sales by region
 - Interactive date-range and region filters
 
+![Sales Overview dashboard](screenshots/sales-overview.png)
+
 ### Profitability Analysis
 
 - Profit by all 17 sub-categories, including loss-making sub-categories
@@ -34,7 +36,7 @@ The dashboard contains two pages:
 - Profit margin by category
 - Interactive date-range and region filters
 
-> Dashboard access depends on the Looker Studio sharing settings. The report owner should enable viewer access for anyone with the link before sharing this URL publicly.
+![Profitability Analysis dashboard](screenshots/profitability-analysis.png)
 
 ## Validated Dataset Metrics
 
@@ -74,6 +76,9 @@ superstore-sales-analysis/
 ├── Business_Insights.md
 ├── SQL_Analysis_Documentation.md
 ├── superstore_sales.xlsx
+├── screenshots/
+│   ├── sales-overview.png
+│   └── profitability-analysis.png
 └── sql/
     ├── 01_Data_Validation.sql
     ├── 02_Category_Analysis.sql
@@ -98,7 +103,7 @@ Full SQL and explanations are provided in [SQL_Analysis_Documentation.md](SQL_An
 
 ## How to Review the Project
 
-Start with this README for the project overview and live dashboard. Then review the business insights, SQL documentation, individual SQL files, and Excel workbook.
+Start with this README for the project overview, dashboard preview, and live interactive report. Then review the business insights, SQL documentation, individual SQL files, and Excel workbook.
 
 ## Project Status
 
@@ -107,4 +112,5 @@ Start with this README for the project overview and live dashboard. Then review 
 - [x] Excel analysis workbook
 - [x] Business insights and SQL documentation
 - [x] Looker Studio dashboard with date and region filters
+- [x] Public viewer access enabled for the Looker Studio report
 - [ ] Power BI dashboard (planned follow-up)
